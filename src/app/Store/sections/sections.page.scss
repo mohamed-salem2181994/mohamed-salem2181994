@@ -1,0 +1,97 @@
+.demo-main-cont.demo-comp-listview {
+  padding: 0;
+}
+.demo-comp-listview .demo-note {
+  margin: 10px;
+}
+* {
+  font-family: NotoKufiArabic-Regular !important;
+  text-align: right;
+}
+.mbsc-lv-ic-c .mbsc-lv-ic-text-only {
+  padding: 0 0.625em;
+  font-family: "NotoKufiArabic-Regular";
+}
+
+.header-md::after {
+  left: unset;
+}
+
+.mbsc-form,
+.mbsc-control-w,
+.mbsc-btn,
+.mbsc-segmented {
+  font-family: "NotoKufiArabic-Regular" !important;
+}
+
+.mbsc-lv-cont {
+  font-family: "NotoKufiArabic-Regular" !important;
+}
+mbsc-button {
+  background: #545454;
+  font-size: 25px;
+}
+mbsc-button button {
+  font-family: NotoKufiArabic-Regular !important;
+  color: #fff !important;
+}
+.mbsc-ios-dark {
+  background: #0f0f0f;
+  border-color: #333333;
+  color: #ffffff;
+  border: 1px solid;
+  margin: 8px;
+}
+
+.mbsc-ios.mbsc-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+::ng-deep .mbsc-alert.mbsc-fr .mbsc-fr-c.mbsc-wdg-c {
+  text-align: right;
+}
+
+ion-list {
+  overflow: scroll;
+  text-align: right;
+  direction: rtl;
+}
+.md-timestamp {
+  padding-right: 10px;
+}
+::ng-deep ion-item{
+  justify-content: space-between;
+  width: 100%;
+  display: flex;
+}
+ .add-new-item {
+  background-color: #3880ff;
+  padding: 15px;
+  text-align: center;
+  color: #fff;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  direction: rtl;
+}
+.add-new-item >.icon{
+  font-weight: bolder;
+  font-size: 20px;
+  margin-left: 10px;
+}
+::ng-deep button .button-native{
+  padding: 10px;
+}
+
+ion-router-link{
+  width: 100%;
+  display: block;
+}
+ion-header{
+  background-color: blue !important;
+}
+::ng-deep   .alert-input.sc-ion-alert-ios{
+  text-align: right;
+}

@@ -1,0 +1,26 @@
+
+<ion-header>
+  <ion-toolbar class="top-header" color="primary">
+    <h3 class="top-header">القسم الفرعي</h3>
+    <ion-buttons slot="start">
+      <ion-back-button> </ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-list>
+  <ion-item *ngFor="let item of subsectionlist">
+    <p> {{ item.id }} - {{ item.subSection_Description }}</p>
+    <div class="item-note ion-float-left" item-end>
+      <ion-button color="primary" ion-button clear (click)="updatesubSection(item)">
+        <ion-icon name="create"></ion-icon>
+      </ion-button>
+      <ion-button color="danger" ion-button clear (click)="deletesubSection(item.id)">
+        <ion-icon name="trash"></ion-icon>
+      </ion-button>
+    </div>
+  </ion-item>
+</ion-list>
+  <button  (click)="add()" class="add-new-item">
+    <span class="icon">+</span> اضافة عنصر جديد
+  </button>
+

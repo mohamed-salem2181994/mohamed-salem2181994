@@ -1,0 +1,81 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import "~@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+@font-face {
+  font-family: NotoKufiArabic-Regular;
+  src: url(assets/fonts/NotoKufiArabic-Regular.ttf);
+}
+body {
+  font-family: NotoKufiArabic-Regular !important;
+}
+*{
+  font-family: NotoKufiArabic-Regular !important;
+}
+mbsc-button{
+  background: #545454;
+  font-size: 20px !important;
+}
+.mbsc-ios.mbsc-btn{
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color=#000000)";/*IE 8*/
+-moz-box-shadow: 0 7px 6px 6px rgba(0,0,0,0.1), 3px 3px 3px 3px #000000;/*FF 3.5+*/
+-webkit-box-shadow: 0 7px 6px 6px rgba(0,0,0,0.1), 3px 3px 3px 3px #000000;/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+box-shadow: 0 2px 1px 1px rgb(0 0 0 / 10%), 0px 0px 0px 3px #00000000;/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color=#000000); /*IE 5.5-7*/
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.mbsc-ios.mbsc-btn ion-icon {
+  font-weight: bolder;
+  font-size: 22px;
+}
+.mbsc-ios .mbsc-lv-item {
+  background: white;
+  border-color: #cccccc;
+  color: #000000;
+  margin: 8px;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color=#000000)";/*IE 8*/
+  -moz-box-shadow: 0 7px 6px 6px rgba(0,0,0,0.1), 3px 3px 3px 3px #000000;/*FF 3.5+*/
+  -webkit-box-shadow: 0 7px 6px 6px rgba(0,0,0,0.1), 3px 3px 3px 3px #000000;/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+  box-shadow: 0 2px 1px 1px rgb(0 0 0 / 10%), 0px 0px 0px 3px #00000000;/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color=#000000); /*IE 5.5-7*/
+}
+.mbsc-ios .mbsc-lv{
+  background: transparent;
+}
+
+.mbsc-alert.mbsc-fr .mbsc-fr-c.mbsc-wdg-c{
+  text-align: right;
+}
+.mbsc-material.mbsc-input .mbsc-control {
+  text-align: right;
+}
+.mbsc-fr-btn-cont{
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+}
+

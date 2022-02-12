@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar class="top-header" color="primary">
+    <h3 class="top-header"> الصلاحية </h3>
+    <ion-buttons slot="start">
+      <ion-back-button> </ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-list>
+  <ion-item *ngFor="let item of roles">
+    <ion-router-link (click)="openSuprole(item.id)"> {{ item.id }} - {{ item.role_Name }}
+      <br>
+      <span class="primary">التقييم :</span>
+      {{item.total_Points}}
+    </ion-router-link>
+    <div class="item-note ion-float-left" item-end>
+      <ion-button color="primary" ion-button clear (click)="updaterole(item.id,item.sectionID)">
+        <ion-icon name="create"></ion-icon>
+      </ion-button>
+      <ion-button color="danger" ion-button clear (click)="deleterole(item.id)">
+        <ion-icon name="trash"></ion-icon>
+      </ion-button>
+    </div>
+  </ion-item>
+</ion-list>
+<button class="add-new-item" color="primary" (click)="showModal()">
+  <span class="icon">+</span> اضافة عنصر جديد
+</button>

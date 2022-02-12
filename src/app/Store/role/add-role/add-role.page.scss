@@ -1,0 +1,12 @@
+*{
+  direction: rtl;
+}
+.btn-close{
+  height: 60px;
+  width: 40px;
+ color: red;
+}
+
+::ng-deep .alert-tappable.sc-ion-alert-ios{
+  direction: rtl;
+}

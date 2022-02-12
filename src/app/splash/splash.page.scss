@@ -1,0 +1,30 @@
+.splash-bg {
+  background-color: #000;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.splash-bg img {
+  width: 70%;
+}
+.Circle-white-top {
+  position: absolute;
+  top: -8%;
+  right: -14%;
+  width: 50%;
+  height: 20%;
+  background-color: rgb(245, 245, 245);
+  border-radius: 50%;
+}
+.Circle-white-button{
+  position: absolute;
+  bottom: -8%;
+  left: -14%;
+  width: 50%;
+  height: 20%;
+  background-color: rgb(245, 245, 245);
+  border-radius: 50%;
+}

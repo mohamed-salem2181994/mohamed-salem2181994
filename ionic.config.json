@@ -1,0 +1,10 @@
+{
+  "name": "Private Inspector",
+  "integrations": {
+    "capacitor": {
+      "enabled": false
+    },
+    "cordova": {}
+  },
+  "type": "angular"
+}

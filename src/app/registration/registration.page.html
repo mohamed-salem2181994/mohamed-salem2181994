@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar class="top-header">
+    <h3 class="top-header">تسجيل جديد</h3>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-content>
+    <div class="main-content">
+      <form #basicForm="ngForm" (ngSubmit)="registUser()">
+        <ion-item lines="full" lines="none">
+          <ion-input type="text" [(ngModel)]="email" required class="input" placeholder="البريد الإلكتروني"
+            name="email">
+          </ion-input>
+        </ion-item>
+        <ion-item lines="full" lines="none">
+          <ion-input type="text" [(ngModel)]="role" required class="input" placeholder="الوظيفة" name="role">
+          </ion-input>
+        </ion-item>
+        <ion-item lines="full" lines="none">
+          <ion-input type="text" [(ngModel)]="userName" required class="input" placeholder="اسم المستخدم"
+            name="userName">
+          </ion-input>
+        </ion-item>
+        <ion-item lines="full" lines="none">
+          <ion-input type="password" [(ngModel)]="password" required class="input" placeholder="الرقم السري"
+            name="password"></ion-input>
+        </ion-item>
+        <ion-item lines="full" lines="none">
+          <ion-input type="password" [(ngModel)]="confirmPassword" required class="input"
+            placeholder="تاكيد كلمة المرور" name="confirmPassword"></ion-input>
+        </ion-item>
+        <ion-row>
+          <ion-col>
+            <ion-button type="submit" color="#eb445a" expand="block" class="btn-login" shape="round">تسجيل </ion-button>
+          </ion-col>
+        </ion-row>
+      </form>
+    </div>
+  </ion-content>

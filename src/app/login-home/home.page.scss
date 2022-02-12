@@ -1,0 +1,82 @@
+* {
+  font-family: NotoKufiArabic-Regular;
+}
+.center {
+  text-align: center;
+  color: red;
+  font-size: 13px;
+  font-family: NotoKufiArabic-Regular;
+}
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  background-image: url("../../assets/images/bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: #fff;
+}
+.user-icon {
+  width: 170px;
+  height: 170px;
+  margin: 20px auto;
+  margin-bottom: 7%;
+}
+.btn-login {
+  font-size: 15px;
+  height: 43px;
+  width: 75%;
+  border-radius: 20px;
+  margin: 15px auto;
+  background-color: #eb445a;
+}
+
+.divider {
+  position: relative;
+}
+.divider::after {
+  content: "";
+  width: 20px;
+  position: absolute;
+  height: 1px;
+  right: 100%;
+  margin-right: 5px;
+  border-radius: 3px;
+  top: 50%;
+  background-color: #949494;
+}
+.divider::before {
+  content: "";
+  width: 20px;
+  position: absolute;
+  height: 1px;
+  left: 100%;
+  margin-left: 5px;
+  border-radius: 3px;
+  top: 50%;
+  background-color: #949494;
+}
+.button-native {
+  border-radius: 20px;
+}
+ion-button{
+  border: 2px solid #ffff;
+  width: 70%;
+  border-radius: 15px;
+  margin-bottom: 5px;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=24, Direction=0, Color=#D6D4D4)";/*IE 8*/
+-moz-box-shadow: 0 0 24px -1px #D6D4D4;/*FF 3.5+*/
+-webkit-box-shadow: 0 0 24px -1px #D6D4D4;/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+box-shadow: 0 0 24px -1px #D6D4D4;/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+filter: progid:DXImageTransform.Microsoft.Shadow(Strength=24, Direction=135, Color=#D6D4D4); /*IE 5.5-7*/
+}
+a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: bolder;
+  font-size: 20px;
+  display: block;
+  width: 100%;
+}

@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar class="top-header">
+    <h3 class="top-header">تسجيل الدخول</h3>
+    <ion-buttons slot="start">
+      <ion-back-button> </ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="main-content">
+    <form #basicForm="ngForm" (ngSubmit)="logInUser()">
+      <ion-item lines="full" lines="none">
+        <ion-input type="text" [(ngModel)]="userName" name="userName" class="input" placeholder="اسم المستخدم">
+          <ion-icon name="contact"></ion-icon>
+        </ion-input>
+      </ion-item>
+
+      <ion-item lines="full" lines="none">
+        <ion-input type="password" [(ngModel)]="password" name="password" class="input" placeholder="كلمة المرور">
+        </ion-input>
+      </ion-item>
+      <ion-row>
+        <ion-col>
+          <ion-button type="submit" color="#eb445a" expand="block" class="btn-login" shape="round">دخول</ion-button>
+          <a [routerLink]="['../forgetpassword']" class="small-text forget-link">هل نسيت كلمة المرور ؟ </a>
+        </ion-col>
+        <p class="new-user">
+          مستخدم جديد
+          <a [routerLink]="['../registration']" class="small-text">
+            تسجيل
+          </a>
+        </p>
+      </ion-row>
+    </form>
+  </div>
+</ion-content>

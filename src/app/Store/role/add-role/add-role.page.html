@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>اضافة صلاحية جديدة </ion-title>
+    <ion-icon class="btn-close" name='close-circle' (click)='dismiss()' style='float: right;'></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label>اسم الصلاحية </ion-label>
+      <ion-input [(ngModel)]="rolrName" name="rolrName"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>القسم</ion-label>
+      <ion-select okText="حفظ" cancelText="اغلاق" [(ngModel)]="sectionID" name="sectionID">
+        <ion-select-option *ngFor="let f of sections" value="{{f.id}}">{{f.section_Name}}</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-item>
+        <ion-label> التقييم</ion-label>
+        <ion-input [(ngModel)]="totalpoints" name="totalpoints"></ion-input>
+      </ion-item>
+    </ion-item>
+    <ion-button color="primary" expand="full" (click)="addRoles()">
+      حفظ
+    </ion-button>
+  </ion-list>
+</ion-content>

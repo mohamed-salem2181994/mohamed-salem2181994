@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar class="top-header" color="primary">
+    <h3 class="top-header">الفروع</h3>
+    <ion-buttons slot="start">
+      <ion-back-button> </ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-list>
+  <ion-item *ngFor="let item of stores">
+    <p> {{ item.id }} - {{ item.store_Name }}</p>
+    <div class="item-note ion-float-left" item-end>
+      <ion-button color="primary" ion-button clear (click)="updateStore(item)">
+        <ion-icon name="create"></ion-icon>
+      </ion-button>
+      <ion-button color="medium" ion-button clear (click)="generateStore(item.id)">
+        <ion-icon name="git-compare-outline"></ion-icon>
+      </ion-button>
+      <ion-button color="danger" ion-button clear (click)="deleteStore(item.id)">
+        <ion-icon name="trash"></ion-icon>
+      </ion-button>
+    </div>
+  </ion-item>
+</ion-list>
+<button (click)="add()" class="add-new-item">
+  <span class="icon">+</span> اضافة عنصر جديد
+</button>
