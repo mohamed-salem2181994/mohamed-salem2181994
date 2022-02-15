@@ -35,6 +35,7 @@ export class AddRolePage implements OnInit {
     this.roleService
       .addRole(this.rolrName, this.sectionID, this.totalpoints)
       .subscribe((result) => {
+        console.log(this.rolrName+"-"+ this.sectionID+"-"+ this.totalpoints)
         if (result.succeeded) {
           this.dismiss();
           const toast = this.toastController.create({

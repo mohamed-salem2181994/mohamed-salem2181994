@@ -72,7 +72,6 @@ export class SuprolePage {
         {
           text: 'اضافة',
           handler: (value) => {
-            debugger
             let isfinance = value['agree']=='on'? true: false;
             console.log(value['0']);
             this.suproleService
@@ -94,7 +93,7 @@ export class SuprolePage {
     const alert = await this.alertCtrl.create({
       inputs: [
         {
-          placeholder: item.subSection_Description,
+          placeholder: item.itemSection_Name,
         },
       ],
       buttons: [

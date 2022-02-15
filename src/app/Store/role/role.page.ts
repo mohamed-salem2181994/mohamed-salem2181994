@@ -37,7 +37,6 @@ export class RolePage {
     });
   }
   openSuprole(roleID: number) {
-    debugger
     const navigationExtras: NavigationExtras = {
       queryParams: {
         roleID: JSON.stringify(roleID),

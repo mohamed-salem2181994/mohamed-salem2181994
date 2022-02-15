@@ -18,12 +18,11 @@ export class SuproleService {
     totalpoints: number,
     Isfinance: boolean
   ): Observable<SuproleModel> {
-    debugger  
     return this.http.post<SuproleModel>(
       this.helperService.baseUrl + 'SubRole',
       {
         parentRoleId: roleID,
-        subRole_Description: suproledes,
+        ItemSection_Name: suproledes,
         total_Points: totalpoints,
         isFinance: Isfinance,
       }
@@ -45,7 +44,7 @@ export class SuproleService {
     return this.http.put<UpdatedsuproleModel>(
       this.helperService.baseUrl + 'SubRole/' + suproleID,
       {
-        subRole_Description: suproledes,
+        ItemSection_Name: suproledes,
         id: suproleID,
         roleId: roleID,
       }

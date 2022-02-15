@@ -9,7 +9,7 @@ export class SuproleModel {
 export class Suprolelistmodel {
   constructor(
     public id: number,
-    public subRole_Description: string,
+    public ItemSection_Name: string,
     public parentRoleId: number,
     public total_Points: number,
     public isFinance: boolean
