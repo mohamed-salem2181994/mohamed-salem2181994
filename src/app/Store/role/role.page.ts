@@ -69,6 +69,9 @@ export class RolePage {
         {
           placeholder: item.role_Name,
         },
+        {
+          placeholder: item.total_Points,
+        },
       ],
       buttons: [
         {
@@ -79,6 +82,8 @@ export class RolePage {
         {
           text: 'تعديل',
           handler: (value) => {
+            console.log(value['0'], item, sectionID);
+            debugger
             this.roleService
               .updateRole(value['0'], item, sectionID)
               .subscribe((result) => {

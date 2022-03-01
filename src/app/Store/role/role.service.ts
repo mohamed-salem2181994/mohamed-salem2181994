@@ -8,7 +8,7 @@ import { RoleModel, UpdatedroleModel } from './role.model';
   providedIn: 'root',
 })
 export class RoleService {
-  constructor(private http: HttpClient, public helperService: HelperService) {}
+  constructor(private http: HttpClient, public helperService: HelperService) { }
   getRole(): Observable<RoleModel> {
     return this.http.get<RoleModel>(this.helperService.baseUrl + `Role`);
   }
@@ -31,12 +31,12 @@ export class RoleService {
       }
     );
   }
-  updateRole(rolrName: string, roleID: number,sectionID: number): Observable<UpdatedroleModel> {
+  updateRole(rolrName: string, roleID: number, sectionID: number,): Observable<UpdatedroleModel> {
     return this.http.put<UpdatedroleModel>(
-      this.helperService.baseUrl + 'Role/' +  roleID,
+      this.helperService.baseUrl + 'Role/' + roleID,
       {
-        role_Name: rolrName,
         id: roleID,
+        role_Name: rolrName,
         sectionId: sectionID,
       }
     );

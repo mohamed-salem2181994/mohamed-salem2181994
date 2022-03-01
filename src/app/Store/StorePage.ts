@@ -116,6 +116,7 @@ export class StorePage {
     (await alert).present();
   }
   async  generateStore(id: number) {
+    debugger
     const alert = this.alertCtrl.create({
       message: 'هل تريد تقييم هذا العنصر ؟',
       buttons: [
@@ -130,6 +131,7 @@ export class StorePage {
           text: 'تقييم',
           handler: () => {
             this.storeService.generateStore(id).subscribe((result) => {
+              debugger
               if (result.succeeded) {
                 console.log(result);
                 this.storelist();

@@ -7,7 +7,7 @@ import { HelperService } from '../helper.service';
   providedIn: 'root',
 })
 export class StoreService {
-  constructor(private http: HttpClient, public helperService: HelperService) {}
+  constructor(private http: HttpClient, public helperService: HelperService) { }
   getStores(): Observable<StoreModel> {
     return this.http.get<StoreModel>(this.helperService.baseUrl + `Store`);
   }
@@ -22,11 +22,14 @@ export class StoreService {
     );
   }
   generateStore(storeId: number): Observable<UpdatedStoreModel> {
-    return this.http.delete<UpdatedStoreModel>(
-      this.helperService.baseUrl + 'Evaluation' + storeId
+    return this.http.post<UpdatedStoreModel>(
+      this.helperService.baseUrl + 'Evaluation',
+      {
+        storeID: storeId
+      }
     );
   }
-  
+
   updateStores(
     storeName: string,
     storeId: number

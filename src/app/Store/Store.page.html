@@ -8,7 +8,7 @@
 </ion-header>
 <ion-list>
   <ion-item *ngFor="let item of stores">
-    <p> {{ item.id }} - {{ item.store_Name }}</p>
+    <p>  {{ item.store_Name }}</p>
     <div class="item-note ion-float-left" item-end>
       <ion-button color="primary" ion-button clear (click)="updateStore(item)">
         <ion-icon name="create"></ion-icon>
